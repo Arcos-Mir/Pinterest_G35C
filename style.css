@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* se puede utilizar variables con propiedades reutilizables en el codigo 
+el :root hace referencia a html*/
+:root {
+    --pin_width:15.635rem;
+    --row_increment: 0.625rem;
+    --pin_radius: 1rem;
+    --pin_small: 26; /* factor de escala */
+    --pin_medium: 34;
+    --pin_large: 46;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-navegation {
+    min-width: 18rem;
+    align-content: space-evenly;
+}
+
+.navbar-navegation button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    float: left;
+    border-radius: 50%;
+    margin: 9px;
+    left: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.navbar-navegation button i {
+    color: rgb(240, 4, 4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.8rem;
+}
+
+.navbar-navegation button:hover {
+    cursor: pointer;
+    background-color: rgba(206, 204, 204, 0.459);
+}
+
+.navbar-navegation ul {
+    width: 75%;
+    float: right;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 550;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+}
+
+.navbar-navegation ul li a {
+    display: inline-block;
+    height: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-navegation ul li a:active {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.navbar-search {
+    flex-grow: 1;
+    background-color: rgba(241, 237, 237, 0.897);
+    height: 52px;
+    border-radius: 25px;
+    cursor: text;
+    position: relative;
+    display: flex;
+    align-content: center;
+    
+}
+
+.navbar-search input {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    padding-left: 15px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    float: right;
+    position: absolute;
+    align-self: flex-end;
+    background-image: url(search-alt-2.png);
+}
+
+/* estilos de boton cierre de barra de busqueda pendiente*/
+div.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(206, 204, 204, 0.459) ;
+    position: absolute;
+} 
+
+.close button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar-search:hover {
+    background-color: rgba(206, 204, 204, 0.459);
+}
+
+.navbar-search :focus {
+    outline: none;
+    border: 4px solid rgb(42, 205, 255);
+}
+
+.navbar-profile {
+    min-width: 12rem;
+    float: right;
+    
+}
+
+.navbar-profile button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: white;
+    position: relative;
+}
+
+button#btn {
+    width: 22px;
+    height: 22px;
+}
+
+.navbar-profile button i {
+    color: rgb(92, 90, 90) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.6rem;
+}
+
+.navbar-profile button:hover {
+    cursor: pointer;
+    background-color: rgba(206, 204, 204, 0.459);
+}
+
+.pin_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--pin_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+}
+
+.pin {
+    margin: 1rem 0.8rem;
+    border-radius: var(--pin_radius);
+    position: relative;
+    /* background-color: cadetblue;  */
+}
+
+article img {
+    width: 100%;
+    border-radius: var(--pin_radius);
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--pin_radius);
+    display: flex;
+    flex-direction: column;
+    transform: scale(0);
+    transition: .02s ease-in-out;
+} 
+
+.capa div.box1 {
+    width: 100%;
+    height: 40%;
+    margin-top: 8%;
+}
+
+.capa div.box1 a {
+    width: 40%;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.capa div.box1 a#dropItem::after {
+    content: "⌵";
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.capa div.box1 button {
+    width: 43%;
+    color: white;
+    background-color: rgb(247, 7, 7);
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    float: right;
+    margin-right: 10px;
+}
+
+.capa div.box2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.capa div.box2 > button {
+    width: 2.1rem;
+    height: 2.1rem;
+    border: none;
+    border-radius: 50%;
+    float: right;
+    font-size: 1.4rem;
+    transform: translate(-50%,-50%);
+}
+
+.capa div.box1 button:hover,
+.capa div.box2 button:hover {
+    cursor: pointer;
+}
+
+.capa div.box2 button#dot {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+article:hover .capa {
+    cursor: zoom-in;
+    transform: scale(1);
+}
+
+.navbar-bottom {
+    display: none;
+}
+
+.plus {
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 33px;
+    z-index: 1;
+}
+
+.plus button {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.pin_small {
+    grid-row-end: span var(--pin_small);
+
+}
+
+.pin_medium {
+    grid-row-end: span var(--pin_medium);
+}
+
+.pin_large {
+    grid-row-end: span var(--pin_large);
+}
+
+/* Media queries adaptacion mobile */
+@media ( max-width:600px) {
+    :root {
+        --pin_width:11.635rem;
+        --row_increment: 0.620rem;
+        --pin_radius: 1rem;
+        --pin_small: 20; /* factor de escala */
+        --pin_medium: 28;
+        --pin_large: 40;
+    }
+    
+    .pin_container {
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, var(--pin_width));
+        grid-auto-rows: var(--row_increment);
+        
+    }
+
+    nav {
+        height: 3rem;
+        border: 2px solid green;
+        display: none;
+        align-items: flex-end;
+        
+    }
+
+    .capa {
+        display: none;
+    } 
+
+    article:hover .capa {
+        cursor: default;
+    }
+
+    .navbar-bottom {
+        height: 3rem;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .navbar-bottom button {
+        width: 2rem;
+        height: 100%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    .navbar-bottom button#btn1 {
+        color: rgba(90, 89, 89, 0.973);
+    }
+
+    .plus {
+        display: none;
+    }
+}
+
+/* Media queries adaptacion ipad */
+@media ( max-width: 834px) {
+    
+    .capa {
+        display: none;
+    } 
+
+}

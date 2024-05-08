@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="icon" href="logo1.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>   
+    <div>
+        <header>   
+            <nav>
+                <div class="navbar-navegation">   
+                    <button><a href="https://www.pinterest.com.mx"><i class='bx bxl-pinterest' ></i></a></button>
+                    <ul>
+                        <li><a href="https://www.pinterest.com.mx/">Inicio</a></li>
+                        <li><a href="https://www.pinterest.com.mx/today/">Explorar</a></li>
+                        <li><a href="https://www.pinterest.com.mx/pin-creation-tool/">Crear</a></li>
+                    </ul>
+                </div> 
+                <div class="navbar-search">
+                    <div class="btn_bus">
+                        <input type="search" name="Buscar" id="dropSearch" placeholder="  Buscar">
+                        <!-- <div class="close">
+                            <button><i class='bx bx-x'></i></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="navbar-profile">
+                    <button><i class='bx bxs-bell'></i></button>
+                    <button><i class='bx bxs-message-rounded-dots' ></i></button>
+                    <button><i class='bx bxs-color' ></i></button>
+                    <button id="btn"><i class='bx bx-chevron-down' ></i></button>
+                </div>
+            </nav>
+        </header>
+        <main class="pin_container">
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/8.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Boo ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>     
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/1a.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Ositos ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/2.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Acuarela</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/11.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Jordan</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/9a.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Groot ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/3.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Juguetes</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/12.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Dior ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/20.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/4.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Mascotas</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/13.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/15.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Dogs ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/5.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Arte ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/14.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/16.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/6.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Pintura</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/18.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Pastel ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/17.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Postres </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/7.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Tatoo ..</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/20.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Ejercicio</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/19.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/28.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Dragón</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article> 
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/21.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Princesas</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/32.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/33.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Belleza </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/22.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Postres </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/25.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Moda ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/34.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/23.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Lectura </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/29.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/35.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Artistas</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/24.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Acowar </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/31.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Decor..</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_large">
+                <img class="pin_large" src="img/large/36.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Noche ..</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/25.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Principito</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/38.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/26a.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Postre </a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_medium">
+                <img class="pin_medium" src="img/medium/26.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/29.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Playa ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/30.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Perfil ...</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="pin pin_small">
+                <img class="pin_small" src="img/small/37.jpg" alt="">
+                <div class="capa">
+                    <div class="box1">
+                        <a id="dropItem" href="">Noche ..</a>
+                        <button>Buscar</button>
+                    </div>
+                    <div class="box2">
+                        <button><i class='bx bx-upload' ></i></button>
+                        <button id="dot"><i class='bx bx-dots-horizontal-rounded' ></i></button>
+                    </div>
+                </div>
+            </article>
+            <div class="plus">
+                <button><i class='bx bx-question-mark'></i></button>
+            </div>
+        </main>
+        <footer>
+            <div class="navbar-bottom">
+                <button id="btn2"><span class="material-symbols-outlined">
+                    home
+                    </span></button>
+                <button id="btn1"><span class="material-symbols-outlined">
+                        search
+                    </span></button>
+                <button id="btn1"><i class='bx bxs-message-rounded-dots' ></i></button>
+                <button id="btn1"><i class='bx bxs-user'></i></button>
+            </div>
+        </footer>
+    </div>
+</body>    
+</html>
